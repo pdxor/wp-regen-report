@@ -16,7 +16,10 @@ get_header();
     </div>
 
     <div id="environmental" class="tab-content active bg-white p-8 rounded-lg shadow mb-8">
-        <?php echo wpautop(get_post_meta(get_the_ID(), '_environmental_info', true)); ?>
+        <?php 
+        $description = get_post_meta(get_the_ID(), 'report_description', true);
+        echo wp_kses_post($description);
+        ?>
     </div>
 
     <div id="agricultural" class="tab-content hidden bg-white p-8 rounded-lg shadow mb-8">

@@ -1,0 +1,8 @@
+.report_description_field .wp-editor-wrap {
+    width: 100%;
+    max-width: 800px;
+}
+
+.report_description_field .wp-editor-area {
+    border: 1px solid #ddd;
+} 
